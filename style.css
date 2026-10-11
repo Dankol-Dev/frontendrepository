@@ -52,7 +52,7 @@
      outline: 3px solid var(--gold-dark);
      outline-offset: 3px;
  }
-
+/*Styling body and font family, background color and text color*/
  body {
      background: linear-gradient(180deg, #f9f5f1 0%, #f3ece4 100%);
      color: var(--text);
@@ -65,7 +65,7 @@
 
 
 
- /* Container for the Hero Header */
+ /* Container for the Hero Header in Home page */
  .hero-header {
      position: relative;
      width: 100%;
@@ -155,6 +155,7 @@
 
  }
 
+ /*Styling the Heading of the pages*/
  .header-content h1 {
      font-size: clamp(2.3rem, 4vw, 4rem);
      font-weight: 800;
@@ -199,7 +200,7 @@
      }
  }
 
- .hamburger span {
+ .toggle-menu span {
      display: block;
      width: 22px;
      height: 2.5px;
@@ -1228,7 +1229,7 @@
      text-shadow: none;
  }
 
- .hamburger {
+ .toggle-menu {
      position: relative;
      z-index: 1001;
      display: none;
@@ -1246,19 +1247,19 @@
      cursor: pointer;
  }
 
- .hamburger:hover {
+ .toggle-menu:hover {
      background: rgba(214, 138, 60, 0.2);
  }
 
- .hamburger[aria-expanded="true"] span:first-child {
+ .toggle-menu[aria-expanded="true"] span:first-child {
      transform: translateY(7.5px) rotate(45deg);
  }
 
- .hamburger[aria-expanded="true"] span:nth-child(2) {
+ .toggle-menu[aria-expanded="true"] span:nth-child(2) {
      opacity: 0;
  }
 
- .hamburger[aria-expanded="true"] span:last-child {
+ .toggle-menu[aria-expanded="true"] span:last-child {
      transform: translateY(-7.5px) rotate(-45deg);
  }
 
@@ -1306,7 +1307,7 @@
          flex-basis: 56px;
      }
 
-     .hamburger {
+     .toggle-menu {
          display: flex;
          grid-column: 2;
          grid-row: 1;

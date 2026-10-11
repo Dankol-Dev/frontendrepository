@@ -1,32 +1,32 @@
 function initPopup() {
-  // Hamburger menu toggle
-  const hamburger = document.querySelector(".hamburger");
-  if (hamburger) {
-    hamburger.addEventListener("click", () => {
-      const nav = hamburger.closest(".container, .universal-container")?.querySelector("nav");
+  // Toggle the mobile navigation menu.
+  const toggleMenu = document.querySelector(".toggle-menu");
+  if (toggleMenu) {
+    toggleMenu.addEventListener("click", () => {
+      const nav = toggleMenu.closest(".container, .universal-container")?.querySelector("nav");
       if (!nav) return;
       const isOpen = nav.classList.toggle("open");
-      hamburger.setAttribute("aria-expanded", String(isOpen));
-      hamburger.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Toggle navigation menu");
+      toggleMenu.setAttribute("aria-expanded", String(isOpen));
+      toggleMenu.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Toggle navigation menu");
     });
 
     // Close the menu when a link is clicked
     document.querySelectorAll("nav a").forEach((link) => {
       link.addEventListener("click", () => {
-        const nav = hamburger.closest(".container, .universal-container")?.querySelector("nav");
+        const nav = toggleMenu.closest(".container, .universal-container")?.querySelector("nav");
         nav?.classList.remove("open");
-        hamburger.setAttribute("aria-expanded", "false");
-        hamburger.setAttribute("aria-label", "Toggle navigation menu");
+        toggleMenu.setAttribute("aria-expanded", "false");
+        toggleMenu.setAttribute("aria-label", "Toggle navigation menu");
       });
     });
 
     // Close the menu with Escape
     document.addEventListener("keydown", (event) => {
       if (event.key === "Escape") {
-        const nav = hamburger.closest(".container, .universal-container")?.querySelector("nav");
+        const nav = toggleMenu.closest(".container, .universal-container")?.querySelector("nav");
         nav?.classList.remove("open");
-        hamburger.setAttribute("aria-expanded", "false");
-        hamburger.setAttribute("aria-label", "Toggle navigation menu");
+        toggleMenu.setAttribute("aria-expanded", "false");
+        toggleMenu.setAttribute("aria-label", "Toggle navigation menu");
       }
     });
   }
