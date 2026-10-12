@@ -52,7 +52,8 @@
      outline: 3px solid var(--gold-dark);
      outline-offset: 3px;
  }
-/*Styling body and font family, background color and text color*/
+
+ /*Styling body and font family, background color and text color*/
  body {
      background: linear-gradient(180deg, #f9f5f1 0%, #f3ece4 100%);
      color: var(--text);
@@ -365,9 +366,7 @@
 
  /*Style for header*/
 
- #universal-box {
-     box-shadow: rgba(55, 56, 56, 0.25) -10px 30px 9px -20px, rgba(75, 72, 72, 0.3) -10px 18px 5px -5px;
- }
+
 
  /*Styling multiple pages intro heading*/
  .universal-intro {
@@ -384,7 +383,7 @@
  }
 
 
- /*Styling main content section in shopping page and other pages*/
+ /*Styling main content section in equipment page, shopping page and other pages*/
 
  .universal-section {
      display: flex;
@@ -1147,6 +1146,8 @@
  #universal-box {
      padding: 0.5rem;
      background: linear-gradient(180deg, #2c1b12, #493225);
+     box-shadow: rgba(55, 56, 56, 0.25) -10px 30px 9px -20px, rgba(75, 72, 72, 0.3) -10px 18px 5px -5px;
+
  }
 
  .universal-header-row {
